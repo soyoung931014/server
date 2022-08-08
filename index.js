@@ -5,6 +5,8 @@ const express = require("express");
 const hotels = require("./api/hotels");
 const reserved = require("./api/reservation");
 
+const cors = require("cors");
+
 // Initialize Express
 const app = express();
 
