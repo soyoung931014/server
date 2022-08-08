@@ -15,12 +15,7 @@ app.get("/", (req, res) => {
 app.use("/hotels", hotels);
 app.use("/reserved", reserved);
 
-app.use(
-  cors({
-    origin: ["http://localhost:3000"],
-    methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
-  })
-);
+app.use(cors());
 
 // Initialize server
 app.listen(5000, () => {
